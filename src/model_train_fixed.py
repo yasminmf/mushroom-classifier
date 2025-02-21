@@ -18,7 +18,6 @@ y = df["class"]
 
 # Dividir os dados em treino e teste (70% treino, 30% teste para otimizar o tempo)
 X_train_red, X_test_red, y_train_red, y_test_red = train_test_split(X_reduced, y, test_size=0.3, random_state=42, stratify=y)
-
 # Definir os hiperparâmetros fixos
 best_params = {'C': 1.0, 'gamma': 'scale', 'kernel': 'rbf'}
 

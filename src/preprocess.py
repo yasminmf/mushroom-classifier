@@ -1,6 +1,5 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-
 def load_and_preprocess_data(file_path):
     """
     Carrega e pré-processa o dataset de cogumelos.

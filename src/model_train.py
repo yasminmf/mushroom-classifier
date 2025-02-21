@@ -10,7 +10,7 @@ file_path = "C:\\Users\\Arlison Gaspar\\Desktop\\testIA\\mushroom-classifier\\da
 df, _ = load_and_preprocess_data(file_path)
 
 # Definir as features reduzidas
-selected_features = ["odor", "spore-print-color", "stalk-surface-below-ring", "stalk-color-above-ring", "habitat", "cap-color"]  # Adicione as features desejadas
+selected_features = ["odor", "spore-print-color", "stalk-surface-below-ring", "stalk-color-above-ring", "habitat", "cap-color"]  
 
 X_reduced = df[selected_features]
 y = df["class"]
