@@ -27,7 +27,6 @@ def load_and_preprocess_data(file_path):
         le = LabelEncoder()
         df[column] = le.fit_transform(df[column])
         label_encoders[column] = le  # Guardamos o encoder para futuras conversões reversas
-
     return df, label_encoders
 
 if __name__ == "__main__":

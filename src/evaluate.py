@@ -4,7 +4,10 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from preprocess import load_and_preprocess_data
-from mpl_toolkits.mplot3d import Axes3D  # Importação necessária para gráficos 3D
+from mpl_toolkits.mplot3d import Axes3D   # Importação necessária para gráficos 3D
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+import pandas as pd
 
 # Carregar os dados pré-processados
 file_path = "C:\\Users\\Arlison Gaspar\\Desktop\\testIA\\mushroom-classifier\\data\\agaricus-lepiota.data"
@@ -18,7 +21,7 @@ X_reduced = df[selected_features]
 y = df["class"]
 
 # Modelo otimizado a ser avaliado
-model_path = "mushroom-classifier\src\svm_model_grid_search_reduced.pkl"
+model_path = "src\svm_model_fixed_reduced02.pkl"
 print(f"\nAvaliando modelo: {model_path}")
 model = joblib.load(model_path)
 X_test = X_reduced  # Avaliação usando as 6 features
