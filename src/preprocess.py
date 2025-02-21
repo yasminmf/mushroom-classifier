@@ -32,5 +32,5 @@ def load_and_preprocess_data(file_path):
 
 if __name__ == "__main__":
     # Testar a função
-    df, _ = load_and_preprocess_data("C:/Users/yasmi/INTELIGENCIA ARTIFICIAL/mushroom-classifier/data/agaricus-lepiota.data")
+    df, _ = load_and_preprocess_data("C:\\Users\\Arlison Gaspar\\Desktop\\testIA\\mushroom-classifier\\data\\agaricus-lepiota.data")
     print(df.head())
